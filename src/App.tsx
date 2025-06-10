@@ -5,6 +5,7 @@ import { Footer } from "./Widgets/Footer/Footer";
 import { Vote } from "./Pages/Vote/Vote";
 import { LuckyHand } from "./Pages/Lucky/Luck";
 import { MyTeam } from "./Pages/Team/Team";
+import { Quests } from "./Pages/Quests/Quests";
 
 export const Router = () => {
   return (
@@ -13,6 +14,7 @@ export const Router = () => {
       <Route path="/vote" element={<Vote />} />
       <Route path="/my_team" element={<MyTeam />} />
       <Route path="/luckyHand" element={<LuckyHand />} />
+      <Route path="/quests" element={<Quests />} />
     </Routes>
   );
 };
