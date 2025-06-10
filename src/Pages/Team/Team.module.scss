@@ -1,0 +1,95 @@
+.myTeam {
+  background: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 30px;
+
+  &_back_button {
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-transform: uppercase;
+
+    p {
+      border-radius: 15px;
+      background: white;
+      width: 44px;
+      height: 44px;
+    }
+  }
+
+  &_params {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    background: white;
+
+    div {
+      border-radius: 7px;
+      background: var(--bg-color);
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+  &_balance {
+    border-radius: 15px;
+    padding: 15px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+  }
+
+  &_list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &_wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &_item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 10px;
+      border-radius: 15px;
+      background: white;
+
+      section {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        span {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          font-size: 14px;
+
+          img {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
