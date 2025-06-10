@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  background: var(--bg-color);
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &_section {
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    background: white;
+
+    span {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}

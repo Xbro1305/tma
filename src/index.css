@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans 3", sans-serif;
+  overscroll-behavior: none;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#root {
+  width: 100%;
+  max-width: 480px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+:root {
+  --bg-color: #f1f5fe;
+  --blue: #0fc3c3;
+}
+
+.text-secondary {
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.modal {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #bababa40;
+  backdrop-filter: blur(10px);
+  padding: 0;
+  margin: 0;
+}
+
+.modal_body {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  width: 100vw;
+  max-width: 480px;
+  overflow-y: auto;
+  border-radius: 15px 15px 0 0;
+  background: white;
+  animation: anim 1s ease;
+}
+
+.modal_body_content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.black-button,
+.white-button {
+  font-size: 16px;
+  line-height: 120%;
+  padding: 15px;
+  width: 100%;
+  border-radius: 15px;
+  border: none;
+  background: #000;
+  color: white;
+}
+
+.white-button {
+  background: #f1f5fe;
+  color: black;
+}
+
+@keyframes anim {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}

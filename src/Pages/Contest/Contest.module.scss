@@ -1,0 +1,88 @@
+.contest {
+  background: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 30px;
+
+  &_back_button {
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-transform: uppercase;
+
+    p {
+      border-radius: 15px;
+      background: white;
+      width: 44px;
+      height: 44px;
+    }
+  }
+
+  &_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+
+    &_bottom {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      > section {
+        background: white;
+        padding: 10px;
+        border-radius: 15px;
+
+        ol {
+          margin-left: 20px;
+        }
+      }
+
+      button {
+        width: 100%;
+        padding: 15px;
+        background: black;
+        border-radius: 15px;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      > span {
+        text-align: center;
+      }
+    }
+  }
+
+  &_winners {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    &_list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      &_item {
+        padding: 15px;
+        border-radius: 15px;
+        background: white;
+
+        i {
+          font-weight: 600;
+          font-style: normal;
+          color: var(--blue);
+        }
+      }
+    }
+  }
+}
