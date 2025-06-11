@@ -2,7 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import styles from "./Team.module.scss";
 import { BiChevronLeft, BiLink } from "react-icons/bi";
 import { TbUsersPlus } from "react-icons/tb";
-import granny from "../../assets/1. Главный экран.png";
+import granny from "../../assets/gr.png";
 import coin from "../../assets/coin.png";
 
 export const MyTeam = () => {
