@@ -7,6 +7,7 @@ import { LuckyHand } from "./Pages/Lucky/Luck";
 import { MyTeam } from "./Pages/Team/Team";
 import { Quests } from "./Pages/Quests/Quests";
 import { Top } from "./Pages/Top/Top";
+import { Home } from "./Pages/Home/Home";
 
 export const Router = () => {
   return (
@@ -17,6 +18,7 @@ export const Router = () => {
       <Route path="/luckyHand" element={<LuckyHand />} />
       <Route path="/quests" element={<Quests />} />
       <Route path="/top" element={<Top />} />
+      <Route path="/" element={<Home />} />
     </Routes>
   );
 };

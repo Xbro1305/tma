@@ -15,7 +15,9 @@
     "react-icons": "^5.5.0",
     "react-number-format": "^5.4.4",
     "react-router-dom": "^7.6.2",
-    "sass": "^1.89.1"
+    "react-swiper": "^0.1.5",
+    "sass": "^1.89.1",
+    "swiper": "^11.2.8"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
