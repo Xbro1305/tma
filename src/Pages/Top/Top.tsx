@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import styles from "./Top.module.scss";
-import granny from "../../assets/1. Главный экран (1).png";
-import granny1 from "../../assets/1. Главный экран (1).png";
+import granny from "../../assets/gr.png";
+import granny1 from "../../assets/gr1.png";
 import { BiChevronLeft } from "react-icons/bi";
 import { useState } from "react";
 import coins from "../../assets/coin.png";
