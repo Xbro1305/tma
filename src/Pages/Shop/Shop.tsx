@@ -225,11 +225,11 @@ export const Shop = () => {
           </div>
           <button
             className={
-              size == null && postAddress == null && receiver == null
+              size == null || postAddress == null || receiver == null
                 ? "white-button"
                 : "black-button"
             }
-            disabled={size == null && postAddress == null && receiver == null}
+            disabled={size == null || postAddress == null || receiver == null}
           >
             Подтвердить данные и оформить доставку
           </button>

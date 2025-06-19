@@ -2,14 +2,14 @@
   display: flex;
   flex-direction: column;
   background: var(--bg-color);
-  gap: 40px;
+  gap: 30px;
 
   &_top {
     display: flex;
     flex-direction: column;
     padding: var(--padding);
     background: var(--bg-color);
-    gap: 40px;
+    gap: 30px;
   }
 
   &_list {

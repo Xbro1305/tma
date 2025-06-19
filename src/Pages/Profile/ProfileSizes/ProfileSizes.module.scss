@@ -3,13 +3,16 @@
   flex-direction: column;
   padding: var(--padding);
   background: var(--bg-color);
-  gap: 20px;
+  gap: 30px;
 
-  > p > a {
-    color: var(--blue);
-    text-decoration: none;
+  > p {
+    margin-bottom: 10px;
+
+    a {
+      color: var(--blue);
+      text-decoration: none;
+    }
   }
-
   &_section {
     display: flex;
     flex-direction: column;
