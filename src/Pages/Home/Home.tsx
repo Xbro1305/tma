@@ -54,7 +54,12 @@ export const Home = () => {
       </div>
       <Link
         to={RouterPaths.shop}
-        style={{ margin: "0 10px", width: "calc(100% - 20px)" }}
+        style={{
+          margin: "0 10px",
+          width: "calc(100% - 20px)",
+          textDecoration: "none",
+          textAlign: "center",
+        }}
         className="black-button"
       >
         Мерч маркет
