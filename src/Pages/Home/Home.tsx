@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import { RouterPaths } from "../../App";
 
 export const Home = () => {
   const navigationItems = [
@@ -19,31 +20,31 @@ export const Home = () => {
       title: "Разгадай Москву",
       desc: "Знаешь Москву? Докажи: отвечай на вопросы и зарабатывай лапки",
       img: img1,
-      link: "",
+      link: RouterPaths.home,
     },
     {
       title: "Лапка удачи",
       desc: "Тапни и выиграй что-то за-мур-чательное!",
       img: img2,
-      link: "/luckyHand",
+      link: RouterPaths.luckyHand,
     },
     {
       title: "Конкурс",
       desc: "Участвуй в конкурсах от Бублика и его друзей",
       img: img3,
-      link: "/contest",
+      link: RouterPaths.contest,
     },
     {
       title: "Задания",
       desc: "Когда «домашка» не как в школе, а в радость",
       img: img4,
-      link: "/quests",
+      link: RouterPaths.quests,
     },
     {
       title: "Голосуй!",
       desc: "Участвуй в голосовании и получай подарки!",
       img: img5,
-      link: "/vote",
+      link: RouterPaths.vote,
     },
   ];
   return (

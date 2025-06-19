@@ -1,0 +1,57 @@
+.profileSizes {
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding);
+  background: var(--bg-color);
+  gap: 20px;
+
+  > p > a {
+    color: var(--blue);
+    text-decoration: none;
+  }
+
+  &_section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    p {
+      text-align: center;
+    }
+
+    > div {
+      gap: 10px;
+
+      input {
+        display: none;
+      }
+    }
+
+    &_gender {
+      display: grid;
+      grid-template-columns: repeat(2, calc(50% - 5px));
+    }
+
+    &_age {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &_size {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media (max-width: 400px) {
+        p {
+          padding: 13px;
+        }
+      }
+      @media (max-width: 380px) {
+        p {
+          padding: 10px;
+        }
+      }
+    }
+  }
+}

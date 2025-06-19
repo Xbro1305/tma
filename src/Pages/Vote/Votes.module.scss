@@ -58,6 +58,13 @@
       &_img {
         width: 100%;
       }
+
+      &:hover {
+        cursor: pointer;
+        figure > img {
+          border: 3px solid var(--blue) !important;
+        }
+      }
     }
   }
 }

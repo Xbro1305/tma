@@ -1,0 +1,17 @@
+.back_button {
+  font-size: 40px;
+  font-weight: 700;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  p {
+    border-radius: 15px;
+    background: white;
+    width: 44px;
+    height: 44px;
+    margin-top: 5px;
+  }
+}

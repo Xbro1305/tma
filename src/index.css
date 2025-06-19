@@ -16,6 +16,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  color: var(--text-color);
 }
 
 #root {
@@ -29,6 +30,8 @@ body {
   --bg-color: #f1f5fe;
   --blue: #0fc3c3;
   --gray: #827e9c;
+  --text-color: #252525;
+  --padding: 10px;
 }
 
 .text-secondary {
@@ -96,11 +99,17 @@ body {
   border: none;
   background: #000;
   color: white;
+  cursor: pointer;
 }
 
 .white-button {
   background: #f1f5fe;
   color: black;
+}
+
+.white-button:disabled {
+  background: #ececec;
+  color: #827e9c;
 }
 
 @keyframes anim {
