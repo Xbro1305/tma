@@ -52,12 +52,13 @@ export const Home = () => {
       <div className={styles.home_intro}>
         <img src={banner} alt="" />
       </div>
-      <button
+      <Link
+        to={RouterPaths.shop}
         style={{ margin: "0 10px", width: "calc(100% - 20px)" }}
         className="black-button"
       >
         Мерч маркет
-      </button>
+      </Link>
       <div className={styles.home_navigation}>
         {navigationItems.map((item, index) => (
           <Link
