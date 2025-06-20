@@ -22,7 +22,9 @@ export const ProfileSizes = () => {
   }, []);
 
   const handleSubmit = () => {
-    const textSize = `${gender}, возраст ${age}+, размер ${size}`;
+    const textSize = `${
+      gender == "male" ? "Мужской" : "Женский"
+    }, возраст ${age}+, размер ${size}`;
     localStorage.setItem("profile_sizes", textSize);
     const objectSize = { gender, age, size };
     localStorage.setItem("profile_sizes_object", JSON.stringify(objectSize));
