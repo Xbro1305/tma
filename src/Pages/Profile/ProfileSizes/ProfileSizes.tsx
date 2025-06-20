@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { BackButton } from "../../../Widgets/BackButton/BackButton";
 import styles from "./ProfileSizes.module.scss";
 import { useEffect, useState } from "react";
@@ -8,6 +8,7 @@ export const ProfileSizes = () => {
   const [age, setAge] = useState("");
   const [size, setSize] = useState("");
   const sizes = ["XXS", "XS", "S", "M", "L", "XL", "XXL"];
+  const navigate = useNavigate();
 
   useEffect(() => {
     const sizeObject = JSON.parse(
@@ -28,6 +29,7 @@ export const ProfileSizes = () => {
     localStorage.setItem("profile_sizes", textSize);
     const objectSize = { gender, age, size };
     localStorage.setItem("profile_sizes_object", JSON.stringify(objectSize));
+    navigate(-1);
   };
 
   return (
